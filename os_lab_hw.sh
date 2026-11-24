@@ -1,13 +1,18 @@
---- Level Up Exercises ---
+# -------------------------------
+# OS Lab - Level Up Exercises
+# -------------------------------
 
-Challenge 1 (Count matches):
-Command: grep -c "pattern" filename.txt
-Explanation: The -c option tells grep to only output a count of matching lines.
+# Challenge 1: Count matches (کاوش در راهنما)
+# دستور: 
+grep -c "pattern" filename.txt
+# توضیح: با آپشن c- تعداد خطوط منطبق رو میده و نیازی به wc -l نیست.
 
-Challenge 2 (Deep search):
-Command: find /etc -type f -name "*.conf"
-Explanation: Searches recursively in /etc for files (-type f) ending with .conf.
+# Challenge 2: Deep search (جستجوی عمیق در etc)
+# دستور:
+find /etc -type f -name "*.conf"
+# توضیح: type f- یعنی فقط فایل ها رو بگرده و name- هم یعنی پسوند فایل conf. باشه.
 
-Challenge 3 (Exact cut):
-Command: tail -n +1000 data.csv | head -n 11
-Explanation: tail -n +1000 skips the first 999 lines and starts from line 1000. Piping it to head -n 11 prints exactly 11 lines (lines 1000 to 1010).
+# Challenge 3: Exact cut (خطوط 1000 تا 1010)
+# دستور:
+tail -n +1000 data.csv | head -n 11
+# توضیح: tail خطوط 1000 به بعد رو میده به head، و head هم 11 خط اولش رو چاپ میکنه.
